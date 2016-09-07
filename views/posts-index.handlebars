@@ -1,0 +1,11 @@
+<h1>Post Town</h1>
+<nav>
+  <a class="link" href="/posts/new">generate post</a> /
+  <a class="link" href="/posts/help">wuuut?</a>
+</nav>
+
+<ul>
+ {{#each posts}}
+  <li><a href="/posts/{{id}}" >{{name}}</a></li>
+ {{/each}}
+</ul>
