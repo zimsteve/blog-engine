@@ -1,0 +1,25 @@
+{
+  "name": "blog-engine",
+  "version": "1.0.0",
+  "description": "Ben and Steve's First-Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "chimp --watch",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zimsteve/blog-engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zimsteve/blog-engine/issues"
+  },
+  "homepage": "https://github.com/zimsteve/blog-engine#readme",
+  "dependencies": {
+    "chimp": "^0.40.6",
+    "express": "^4.14.0"
+  }
+}
