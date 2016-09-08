@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "chimp --watch",
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "dev-start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
