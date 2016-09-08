@@ -16,4 +16,28 @@ module.exports = function () {
     const listItemExists = browser.waitForExist(`li=${text}`)
     assert.equal(listItemExists, true, callback)
   })
+
+  this.When('I enter "$string" into the "$string" input', function (value, name) {
+    browser.setValue(`input[name=${name}]`, value)
+  })
+
+  this.Then('I am redirected to the "$string" page', function (pathname, callback) {
+    browser.waitForExist('body')
+    const url = browser.getUrl()
+    assert.equal(Url.parse(url).pathname, pathname, callback)
+  })
+  this.When('I click on the input with value "$string"', function (value) {
+    browser.click(`input[value="${value}"]`)
+  })
 }
+
+
+
+// @watch
+// Scenario: I want to add a new post
+//   Given I am viewing the page at "/posts/new"
+//   When I enter "second-post" into the "name" input
+//   And I enter "blog-content" into the "content" input
+//   And I click on the input with value "Create Post"
+//   Then I am redirected to the "/posts" page
+//   And I can see the list item "second-post"

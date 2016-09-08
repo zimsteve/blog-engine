@@ -1,5 +1,1 @@
-{
-  "posts": [
-    {"id": 1, "name": "first-post", "image": "http://www.knoxroad.com/wp-content/uploads/2009/05/cute-kitten.jpg"}
-  ]
-}
+{"posts":[{"id":1,"name":"first-post"},{"id":2,"name":"first-post-2"},{"name":"Irene Robb","content":"asfsdf","id":3},{"name":"second-post","content":"blog-content","id":4}]}
